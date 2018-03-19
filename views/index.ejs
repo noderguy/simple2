@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% if(errors) {%>
+      <% for(var x in errors){ %>
+        <div><%= errors[x]['msg']%></div>
+        <% } %>
+    <% } %>
+    <form action="/" method="post">
+      <input type="text" name="email" id="" placeholder="input email"><br>
+      <input type="password" name="password" id="" placeholder="input pw"><br>
+      <input type="submit" name="" id="" value="submit">
+    </form>
+  </body>
+</html>
